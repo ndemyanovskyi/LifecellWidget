@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_root"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_internet_info"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true">
+
+                <LinearLayout
+                    android:id="@+id/layout_internet_total_amount"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom">
+
+                    <TextView
+                        android:id="@+id/textview_internet_total_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6758"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"/>
+                    <TextView
+                        android:id="@+id/textview_internet_total_amount_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mb"
+                        android:paddingLeft="4dp"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressbar_internet"
+                    style="@android:style/Widget.Material.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:indeterminate="false"
+                    android:indeterminateOnly="false"
+                    android:max="100"
+                    android:progress="10"
+                    android:secondaryProgress="50"
+                    android:progressDrawable="@drawable/progress_internet"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_internet_used_today_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:gravity="left|bottom">
+
+                        <TextView
+                            android:id="@+id/textview_internet_used_today_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="67"
+                            android:textSize="42sp"
+                            android:fontFamily="sans-serif-thin"
+                            android:textColor="@android:color/white"/>
+                        <TextView
+                            android:id="@+id/textview_internet_used_today_amount_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="6dp"
+                            android:text="Mb"
+                            android:textSize="25sp"
+                            android:fontFamily="sans-serif-thin"
+                            android:textColor="@android:color/white"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/textview_label_internet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="интернет"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_internet_remaining_today_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="left|bottom">
+
+                    <TextView
+                        android:id="@+id/textview_internet_remaining_today_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="150"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/textview_internet_remaining_today_amount_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Mb осталось"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_internet_recommended_today_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="left|bottom">
+
+                    <TextView
+                        android:id="@+id/textview_internet_recommended_today_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="237"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/textview_internet_recommended_today_amount_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Mb на день"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_center_divider"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:alpha="0.6"
+                android:background="@android:color/white"/>
+
+            <LinearLayout
+                android:id="@+id/layout_video_info"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true">
+
+                <LinearLayout
+                    android:id="@+id/layout_video_total_amount"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom">
+
+                    <TextView
+                        android:id="@+id/textview_video_total_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6758"
+                        android:textSize="25sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/textview_video_total_amount_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mb"
+                        android:paddingLeft="4dp"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressbar_video"
+                    style="@android:style/Widget.Material.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:indeterminate="false"
+                    android:indeterminateOnly="false"
+                    android:max="100"
+                    android:progress="10"
+                    android:secondaryProgress="90"
+                    android:progressDrawable="@drawable/progress_video"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_video_used_today_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:gravity="left|bottom">
+
+                        <TextView
+                            android:id="@+id/textview_video_used_today_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="99"
+                            android:textSize="42sp"
+                            android:fontFamily="sans-serif-thin"
+                            android:textColor="@android:color/white"/>
+                        <TextView
+                            android:id="@+id/textview_video_used_today_amount_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="6dp"
+                            android:text="Mb"
+                            android:textSize="25sp"
+                            android:fontFamily="sans-serif-thin"
+                            android:textColor="@android:color/white"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/textview_label_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="видео"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_video_remaining_today_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="left|bottom">
+
+                    <TextView
+                        android:id="@+id/textview_video_remaining_today_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="150"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/textview_video_remaining_today_amount_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Mb осталось"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_video_recommended_today_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="left|bottom">
+
+                    <TextView
+                        android:id="@+id/textview_video_recommended_today_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="237"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/textview_video_recommended_today_amount_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Mb на день"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_bottom_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:alpha="0.6"
+            android:background="@android:color/white"/>
+
+
+        <LinearLayout
+            android:id="@+id/layout_footer"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/widget_button_update_bg">
+
+            <ViewFlipper
+                android:id="@+id/viewflipper_state"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:inAnimation="@android:anim/fade_in"
+                android:outAnimation="@android:anim/fade_out">
+
+                <ImageView
+                    android:id="@+id/imageview_refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_refresh"/>
+
+                <!--<ProgressBar
+                    android:id="@+id/progressbar_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="true"
+                    android:indeterminateBehavior="repeat"
+                    android:indeterminateOnly="true"
+                    android:indeterminateDuration="1000"
+                    android:indeterminateDrawable="@drawable/widget_progressbar_progress" />-->
+
+                <ImageView
+                    android:id="@+id/imageview_failure"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_failure"/>
+
+            </ViewFlipper>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true">
+
+                <ViewFlipper
+                    android:id="@+id/viewflipper_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inAnimation="@android:anim/fade_in"
+                    android:outAnimation="@android:anim/fade_out">
+
+                    <TextView
+                        android:id="@+id/textview_update_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:text="22:12"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:id="@+id/textview_progress_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:text="@string/message_updating"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:id="@+id/textview_failure_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:text="@string/message_unknown_error"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="@android:color/white"/>
+
+                </ViewFlipper>
+
+                <TextView
+                    android:id="@+id/textview_expiration_date_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:padding="5dp"
+                    android:text="Тариф действует до 27.11.2017."
+                    android:fontFamily="sans-serif-thin"
+                    android:textColor="@android:color/white"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

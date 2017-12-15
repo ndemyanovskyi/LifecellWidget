@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Lifecell Widget</string>
+    <string name="info_message_sign_in_request">Please, sign in.</string>
+    <string name="info_message_splash">Welcome to Lifecell widget!</string>
+    <string name="info_message_sign_in_progress">Please wait…</string>
+    <string name="info_message_sign_in_failure">Authorization failed.</string>
+    <string name="info_message_sign_in_success">Authorization succeed!</string>
+    <string name="info_message_permission_request">Need some permissions for correctly work this widget.</string>
+    <string name="info_message_permission_failure">Permissions for correctly work this widget denied.</string>
+    <string name="info_message_permission_success">Permissions granted.\nThat`s all!</string>
+    <string name="action_request">Request</string>
+    <string name="action_request_again">Request again</string>
+    <string name="action_go_to_settings">Go to Settings</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_go_to_sign_in">Go to sign in</string>
+    <string name="waiting_for_update">Waiting for update…</string>
+    <string name="last_update">Last update at %s.</string>
+    <string name="sending_request">Sending request…</string>
+    <string name="waiting_for_response">Waiting for response…</string>
+    <string name="message_connection_error">Connection error.</string>
+    <string name="message_unknown_error">Unknown error.</string>
+    <string name="message_permissions_denied">Permissions denied.</string>
+    <string name="message_not_logged_in">Not logged in.</string>
+    <string name="message_carrier_not_found">Carrier not found.</string>
+    <string name="message_updating">Updating...</string>
+    <string name="message_enter_correct_values">Enter the correct values.</string>
+    <string name="no_data">--</string>
+    <string name="tariff_expiration_date_message">Tariff is valid up to %s</string>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="prompt_phone_number">Phone number</string>
+    <string name="prompt_superpassword">Superpassword</string>
+    <string name="sign_in">Sign in</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="request_superpassword">Request superpassword</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+
+    <string name="response_type_message_SUCCESS">Success</string>
+    <string name="response_type_message_SESSION_TIMEOUT">Session timeout</string>
+    <string name="response_type_message_INTERNAL_ERROR">Internal Error</string>
+    <string name="response_type_message_INVALID_PARAMETER_LIST">Invalid parameter list</string>
+    <string name="response_type_message_AUTHORIZATION_FAILED">Authorization failed</string>
+    <string name="response_type_message_TOKEN_EXPIRED">Token expired</string>
+    <string name="response_type_message_AUTHORIZATION_FAILED_WRONG_LINK">Autorization failed (wrong link)</string>
+    <string name="response_type_message_WRONG_SUPERPASSWORD">Superpassword is incorrect</string>
+    <string name="response_type_message_WRONG_NUMBER">Phone number doesn`t exists</string>
+    <string name="response_type_message_ONLY_FOR_PREPAID_CUSTOMERS">Only for prepaid customers</string>
+    <string name="response_type_message_SUPERPASSWORD_LOCKED">Superpassword locked. Order new superpassword</string>
+    <string name="response_type_message_NUMBER_DOESNT_EXISTS">Number doesnt exists</string>
+    <string name="response_type_message_SESSION_EXPIRED">Session expired</string>
+    <string name="response_type_message_TARIFF_PLAN_CHANGING_ERROR">Tariff plan changing error</string>
+    <string name="response_type_message_SERVICE_ACTIVATION_ERROR">Service activating error</string>
+    <string name="response_type_message_ORDER_ACTIVATION_ERROR">Order activation error</string>
+    <string name="response_type_message_FAILED_TO_GET_THE_LIST_OF_TARIFFS">Failed to get the list until tariffs</string>
+    <string name="response_type_message_FAILED_TO_GET_THE_LIST_OF_SERVICES">Failed to get the list until services</string>
+    <string name="response_type_message_REMOVE_SERVICE_FROM_PREPROCESSING_FAILED">Remove service from preprocessing failed</string>
+    <string name="response_type_message_LOGIC_IS_BLOCKED">Logic is blocked</string>
+    <string name="response_type_message_TOO_MANY_REQUESTS">Too many requests</string>
+    <string name="response_type_message_PAYMENTS_OF_EXPENSES_MISSED">Payments until expenses missed</string>
+    <string name="response_type_message_RESPONSE_STRUCTURE_CHANGED">Response structure changed. App must be updated</string>
+    <string name="response_type_message_INTERNAL_APPLICATION_ERROR">Internal application error</string>
+    <string name="response_type_message_IO_ERROR">Connection error</string>
+    <string name="response_type_message_INVALID_SUPERPASSWORD">Superpassword must be only from 6 digits</string>
+    <string name="response_type_message_INVALID_NUMBER">Phone number structure must be \'+380##-###-##-##\'</string>
+    <string name="response_type_message_OTHER_CARRIER_NUMBER">Service only for lifecell customers</string>
+    <string name="response_type_message_UNKNOWN">Unknown response</string>
+    <string name="action_recall_superpassword">Recall superpassword</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_category_widget_appearance">WIDGET APPEARANCE</string>
+
+    <string name="pref_title_widget_background_color">Widget background color</string>
+    <string name="pref_dialog_title_widget_background_color">Select a widget background color</string>
+    <string name="pref_description_widget_background_color">Change widget background colot for greater compatibility with the wallpaper.</string>
+    <string name="pref_title_widget_text_color">Widget text color</string>
+    <string name="pref_dialog_title_widget_text_color">Select a widget text color</string>
+    <string name="pref_description_widget_text_color">Change widget text colot for greater compatibility with the widget background.</string>
+
+    <string name="pref_category_account">ACCOUNT</string>
+
+    <string name="pref_title_sign_in">Sign in by another account</string>
+
+</resources>

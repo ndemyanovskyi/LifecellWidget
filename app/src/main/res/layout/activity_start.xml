@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ndemyanovskyi.lifecellwidget.frontend.StartActivity">
+
+    <ScrollView
+        android:id="@+id/scrollview_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:paddingBottom="48dp"
+            android:paddingTop="24dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/background_permissions_request">
+
+            <ImageSwitcher
+                android:id="@+id/imageswitcher_icon"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:alpha="0.6"
+                android:inAnimation="@android:anim/fade_in"
+                android:outAnimation="@android:anim/fade_out"/>
+
+            <TextSwitcher
+                android:id="@+id/textswitcher_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/info_message_permission_request"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-thin"
+                android:inAnimation="@android:anim/fade_in"
+                android:outAnimation="@android:anim/fade_out"
+                android:alpha="0.8"/>
+
+            <LinearLayout
+                android:id="@+id/layout_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/layout_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/SignInEditText"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="22sp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:fontFamily="sans-serif-thin"
+                        app:errorEnabled="true"
+                        android:hint="@string/prompt_phone_number"
+                        app:hintTextAppearance="@style/SignInTextAppearance">
+
+                            <br.com.sapereaude.maskedEditText.MaskedEditText
+                                style="@style/SignInEditText"
+                                android:id="@+id/edittext_phone_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="phone"
+                                mask:allowed_chars="1234567890"
+                                mask:mask="+380##-###-##-##"
+                                android:hint="931234567"
+                                app:keep_hint="true"
+                                android:textSize="22sp"
+                                />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/layout_superpassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/SignInEditText"
+                                app:hintTextAppearance="@style/SignInTextAppearance"
+                                android:textColor="@android:color/white"
+                                android:textColorHint="@android:color/white"
+                                android:fontFamily="sans-serif-thin"
+                                app:errorEnabled="true">
+
+                                    <android.support.design.widget.TextInputEditText
+                                        style="@style/SignInEditText"
+                                        android:id="@+id/edittext_superpassword"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/prompt_superpassword"
+                                        android:imeActionId="6"
+                                        android:imeActionLabel="@string/sign_in"
+                                        android:imeOptions="actionUnspecified"
+                                        android:inputType="number"
+                                        android:maxLines="1"
+                                        android:maxLength="6"
+                                        android:singleLine="true"
+                                        android:textSize="22sp"
+                                        tools:ignore="TextFields"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <Button
+                                style="@style/SignInButton"
+                                android:id="@+id/button_recall_superpassword"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_gravity="end|bottom"
+                                android:text="@string/action_recall_superpassword"
+                                android:textSize="12sp"/>
+
+                    </FrameLayout>
+
+            </LinearLayout>
+
+            <ViewFlipper
+                android:id="@+id/viewflipper_request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inAnimation="@android:anim/fade_in"
+                android:outAnimation="@android:anim/fade_out">
+
+                    <TextSwitcher
+                        android:id="@+id/textswitcher_request"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:textColor="@android:color/white"
+                        android:text="@string/action_request"
+                        android:inAnimation="@android:anim/fade_in"
+                        android:outAnimation="@android:anim/fade_out"/>
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:indeterminateTint="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:indeterminate="true"
+                        android:indeterminateOnly="true"
+                        android:paddingRight="30dp"
+                        android:paddingLeft="30dp"/>
+
+            </ViewFlipper>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

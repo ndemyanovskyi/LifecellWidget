@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="SignInEditText">
+        <item name="android:colorControlNormal">@android:color/white</item>
+        <item name="android:colorControlActivated">@android:color/white</item>
+        <item name="android:colorControlHighlight">@android:color/white</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textColor">@color/text_color_white</item>
+        <item name="android:textColorHint">@color/text_color_hint_white</item>
+    </style>
+
+    <style name="SignInTextAppearance" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="SignInButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="AppTheme.SettingsActionBarTitleAppearance" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/pref_text_color</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="AppTheme.SettingsTextAppearance" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/pref_text_color</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="AppTheme.SettingsItemTitleAppearance" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/pref_text_color</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="AppTheme.SettingsItemDescriptionAppearance" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/pref_text_color_secondary</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="AppTheme.SettingsCategoryAppearance" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/pref_text_color</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="AppTheme.SettingsActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="elevation">0dp</item>
+        <item name="height">90dp</item>
+        <item name="titleTextStyle">@style/AppTheme.SettingsActionBarTitleAppearance</item>
+    </style>
+
+    <style name="AppTheme.SettingsActivity" parent="Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/AppTheme.SettingsActionBar</item>
+        <item name="colorPrimary">@color/pref_text_color</item>
+        <item name="colorPrimaryDark">@color/pref_text_color_secondary</item>
+        <item name="colorAccent">@color/pref_text_color</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textAppearanceListItem">@style/AppTheme.SettingsTextAppearance</item>
+        <item name="android:textAppearance">@style/AppTheme.SettingsTextAppearance</item>
+        <item name="android:itemTextAppearance">@style/AppTheme.SettingsItemTitleAppearance</item>
+        <item name="android:textAppearanceListItemSecondary">@style/AppTheme.SettingsItemDescriptionAppearance</item>
+        <item name="android:preferenceCategoryStyle">@style/AppTheme.SettingsCategoryAppearance</item>
+    </style>
+
+</resources>

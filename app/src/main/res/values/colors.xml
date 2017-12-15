@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_light">#c4c4c4</color>
+    <color name="primary">@android:color/holo_blue_light</color>
+    <color name="primary_dark">@android:color/holo_blue_dark</color>
+    <color name="accent">@android:color/holo_blue_bright</color>
+    <color name="background_splash">#5569b2</color>
+    <color name="background_sign_in_request">#5569b2</color>
+    <color name="background_sign_in_progress">#7890e8</color>
+    <color name="background_sign_in_success">#5cba4e</color>
+    <color name="background_sign_in_failure">#aa2a2a</color>
+    <color name="background_permissions_request">@color/primary_dark</color>
+    <color name="background_permissions_request_again">#4f83a8</color>
+    <color name="background_permissions_success">#57ba59</color>
+    <color name="background_permissions_failure">#c47713</color>
+    <color name="gray">#999999</color>
+    <color name="internet">@android:color/holo_blue_dark</color>
+    <color name="text_color_white">#ffffffff</color>
+    <color name="text_color_hint_white">#50ffffff</color>
+    <color name="pref_text_color">#5569b2</color>
+    <color name="pref_text_color_secondary">#aa5569b2</color>
+    <color name="pref_default_widget_background_color">#00000000</color>
+    <color name="pref_default_widget_text_color">#ffffffff</color>
+</resources>

@@ -1,0 +1,34 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/pref_category_widget_appearance">
+
+        <com.jaredrummler.android.colorpicker.ColorPreference
+            android:defaultValue="@color/pref_default_widget_background_color"
+            android:key="pref_widget_background_color"
+            android:summary="@string/pref_description_widget_background_color"
+            android:title="@string/pref_title_widget_background_color"
+            app:cpv_dialogTitle="@string/pref_dialog_title_widget_background_color"
+            app:cpv_dialogType="custom"
+            app:cpv_showAlphaSlider="true"/>
+
+        <com.jaredrummler.android.colorpicker.ColorPreference
+            android:defaultValue="@color/pref_default_widget_text_color"
+            android:key="pref_widget_text_color"
+            android:summary="@string/pref_description_widget_text_color"
+            android:title="@string/pref_title_widget_text_color"
+            app:cpv_dialogTitle="@string/pref_dialog_title_widget_text_color"
+            app:cpv_dialogType="custom"
+            app:cpv_showAlphaSlider="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_account">
+
+        <Preference
+            android:key="pref_sign_in"
+            android:title="@string/pref_title_sign_in" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
